@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Commodity-Price-Chart/static/css/main.4893e67a.css",
+    "main.js": "/Commodity-Price-Chart/static/js/main.8f223d63.js",
+    "static/js/453.a2147d56.chunk.js": "/Commodity-Price-Chart/static/js/453.a2147d56.chunk.js",
+    "index.html": "/Commodity-Price-Chart/index.html",
+    "main.4893e67a.css.map": "/Commodity-Price-Chart/static/css/main.4893e67a.css.map",
+    "main.8f223d63.js.map": "/Commodity-Price-Chart/static/js/main.8f223d63.js.map",
+    "453.a2147d56.chunk.js.map": "/Commodity-Price-Chart/static/js/453.a2147d56.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4893e67a.css",
+    "static/js/main.8f223d63.js"
+  ]
+}
