@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+.app-container {
+  padding: 30px;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.currency-selector {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-info {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.live {
+  color: green;
+  margin-left: 10px;
+}
+
+.add-price-button {
+  background-color: #28a745;
   color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.add-price-button:hover {
+  background-color: #218838;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.price-input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #baa2e1;
+  margin-bottom: 15px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  /* Tablets */
+  .currency-selector,
+  .add-price-button,
+  .submit-button {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+  .top-info {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Mobile Phones */
+  .app-container {
+    padding: 10px;
+  }
+
+  .currency-selector,
+  .add-price-button,
+  .submit-button {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .top-info {
+    font-size: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .live {
+    display: none;
+  }
+}
+
+/* Media Query for Mobile */
+@media (max-width: 576px) {
+  .chart-container {
+    height: 300px;
+  }
+  .chartjs-render-monitor .x-axis .tick {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
   }
 }
